@@ -1,0 +1,41 @@
+:root {
+    --color-white: hsl(252, 30%, var(--white-color));
+    --color-gray: hsl(252, 15%, 65%);
+    --color-black: hsl(252, 30%, 10%);
+  }
+
+footer {
+    background: var(--color-black);
+    color: var(--color-gray);
+    font-size: 14px;
+    padding: 2rem;
+    margin-top: 2rem;
+    
+  }
+  footer p {
+    color: var(--color-gray);
+    padding-top: 2rem;
+  }
+  
+  footer h3 {
+    color: var(--color-white);
+    margin-bottom: 16px;
+    font-size: medium;
+  }
+.container {
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.col{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+li{
+    color: rgb(255, 255, 255);
+}
+.gg{
+    color: rgb(44, 173, 224, 0.95);
+    padding-right: 1rem;
+}
