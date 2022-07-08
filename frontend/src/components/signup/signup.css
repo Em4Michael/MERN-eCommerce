@@ -1,0 +1,999 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Lato:wght@900&family=Montserrat:wght@600&family=Poppins:wght@400;600&display=swap');
+
+/* Signup start */
+.signup-view{
+    position: relative;
+width: 100vw;
+height: 100vh;
+
+background: #FFFFFF;
+}
+
+.signup-view-right{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    right: 0vw;
+    top: 0vh;
+    
+    background: #F9F9F9;
+}
+.signup-view-left-top{
+    position: absolute;
+    width: 100px;
+    left: 3rem;
+    top: 4rem;
+
+}
+.text-top{
+    position: absolute;
+width: 27px;
+height: 27px;
+right: 40vw;
+top: 25vh;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+padding-left: 5px;
+
+color: #232164;
+
+background: #FFFFFF;
+border: 1.5px solid #CFD7DE;
+border-radius: 50%;
+}
+.text-bottom{
+    position: absolute;
+    width: 30vw;
+    height: 10vh;
+    right: 10vw;
+    top: 40vh;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+/* or 43px */
+
+display: flex;
+align-items: flex-end;
+
+color: #252525;
+}
+.signup-view-right-bottom-img{
+    position: absolute;
+    width: 5vw;
+    height: 5vh;
+    right: 35vw;
+    top: 55vh;
+}
+.signup-view-right-bottom-name{
+    position: absolute;
+    width: 30vw;
+    height: 10vh;
+    right: 0;
+    top: 48vh;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    /* or 35px */
+    
+    display: flex;
+    align-items: flex-end;
+    
+    color: #252525;
+    
+}
+.signup-view-right-bottom-nameUser{
+    position: absolute;
+    width: 30vw;
+    height: 10vh;
+    right: 0;
+    top: 50vh;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 144%;
+/* or 26px */
+
+display: flex;
+align-items: flex-end;
+
+color: #8D8D8D;
+}
+.signup-view-left-bottom-text{
+    position: absolute;
+    width: 30vw;
+    left: 10vw;
+    top: 18vh;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+
+line-height: 29px;
+
+color: #262466;
+}
+.green-text{
+    color: 
+    #3AB75D;
+}
+.form{
+    position: relative;
+    left: 10vw;
+    top: 22vh;
+}
+.form-text{
+    width: 30vw;
+    height: 10vh;
+margin-top: -2rem;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+/* identical to box height */
+display: flex;
+align-items: flex-end;
+
+color: #030303;
+}
+.inputBox{
+width: 30vw;
+    height: 5vh;
+background-color: #FFFF;
+border: 0.5px solid #D5D8DA;
+border-radius: 5px;
+}
+.radio-button{
+    width: 14px;
+height: 12px;
+cursor: pointer;
+border: 0.5px solid #1F5699;
+border-radius: 2px;
+}
+.radio-button-container{
+    position: relative;
+    left: 0vw;
+    top: 5vh;
+    display: flex;
+    gap: 1vw;
+}
+.radio-text{
+    width: 30vw;
+    height: 10vh;
+left: 10vw;
+top: 30vh;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 11px;
+line-height: 16px;
+
+color: #7D8287;
+}
+.text-blue{
+    color: #01306B;
+}
+.signup-button{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 30vw;
+    height: 5vh;
+    left: 0vw;
+    top: 60vh;
+    
+    
+    border: 0.5px solid #D5D8DA;
+    border-radius: 5px;
+}
+.yes{
+    color: #D5D8DA;
+    background: rgba(35, 33, 100, 1);
+}
+.no{
+    background: rgba(35, 33, 100, 0.21);
+}
+.signup-view-left-bottom-link{
+    position: absolute;
+width: 156px;
+height: 24px;
+right: 55vw;
+top: 90vh;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 24px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+text-decoration-line: underline;
+
+color: #232164;
+}
+.error{
+    position: absolute;
+    width: 30vw;
+margin-top: -0.1rem;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 11px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+
+color: #FC0D1B;
+}
+.shift{
+    position: absolute;
+    left: 1vw;
+}
+
+.arrowIconSignup{
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    left: 27vw;
+    top: 3.5vh;
+cursor: pointer;
+}
+
+/* media queery for signup page*/
+@media screen and (max-width: 760px) {
+    .text-bottom{
+        width: 25vw;
+    
+        right: 15vw;
+        
+    font-size: 14px;
+    /* or 43px */
+ 
+    
+    color: #252525;
+    }
+    .signup-view-left-bottom-text{
+        width: 30vw;
+        left: 10vw;
+        top: 17vh;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    
+    
+    }
+}
+/* media queery for signup page*/
+
+/* bvn */
+.cardContainer-bvn{
+    position: absolute;
+    width: 40vw;
+    height: 80vh;
+    left: 30vw;
+    top: 15vh;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 41, 0.25);
+    border-radius: 20px;
+}
+/* .cardContainer{
+    position: absolute;
+width: 40vw;
+height: 70vh;
+left: 30vw;
+top: 15vh;
+background: #FFFFFF;
+box-shadow: 0px 3px 6px rgba(0, 0, 41, 0.25);
+border-radius: 20px;
+} */
+.card-title{
+    position: relative;
+    width: 40vw;
+    left: 5vw;
+    top: 5vh;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+/* identical to box height */
+
+
+color: #232164;
+}
+.field{
+    position: absolute;
+    width: 28vw;
+    left: 6vw;
+    top: 11vh;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 12px;
+display: flex;
+align-items: flex-end;
+
+color: rgba(35, 33, 100, 0.5);
+
+}
+.field1{
+    position: absolute;
+    width: 23vw;
+    left: 5vw;
+    top: 23vh;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+/* identical to box height */
+
+
+color: #232164;
+
+}
+.inputBoxBVN{
+    width: 30vw;
+    height: 5vh;
+background-color: #FFFF;
+border: 0.5px solid #D5D8DA;
+border-radius: 5px;
+}
+.form-textBVN2{
+    width: 30vw;
+ 
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+/* identical to box height */
+background-color: #FFFF;
+display: flex;
+align-items: flex-end;
+
+color: #030303;
+}
+.input-fieldBVN{
+    margin-left: 5vw;
+    margin-top: 10vh;
+}
+.form-text-bvn{
+    width: 30vw;
+    height: 10vh;
+margin-top: -2rem;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+/* identical to box height */
+display: flex;
+align-items: flex-end;
+
+color: #232164;
+}
+.form-textBVN{
+    position: absolute;
+    top: 1vh;
+    left: -1vw;
+    width: 23vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 10px;
+}
+.form-textBVN3{
+    position: absolute;
+    width: 25vw;
+    left: 7vw;
+    top: 35vh;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+    
+    color: rgba(35, 33, 100, 0.5);
+
+}
+.lockIcon{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    left: -2vw;
+    top: 1vh;
+    background-color: #FFFF;
+border: 0.5px solid #D5D8DA;
+border-radius: 50%;
+}
+.bvn-button{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 30vw;
+    height: 5vh;
+    left: 0.5vw;
+    top: 50vh;
+    
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+    border: 0.5px solid #D5D8DA;
+    border-radius: 5px;
+}
+.field-bottom{
+    position: absolute;
+    width: 50vw;
+    height: 5vh;
+    left: 13vw;
+    top: 62vh;
+    
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+/* or 209% */
+
+display: flex;
+color: #706E6E;
+}
+.field-bottom-img{
+    width: 4rem;
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    margin-top: -0.5rem;
+}
+.errorBVN{
+    position: absolute;
+    width: 30vw;
+    left: 6vw;
+top: 31vh;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 11px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+
+color: #FC0D1B;
+}
+.bvn{
+    position: absolute;
+    width: 30vw;
+    left: 5vw;
+    top: 15vh;
+}
+.field-bottom-bvn{
+    position: absolute;
+    width: 50vw;
+    height: 5vh;
+    left: 9vw;
+    top: 58vh;
+    
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+/* or 209% */
+
+display: flex;
+color: #706E6E;
+}
+.skip-link{
+    position: absolute;
+    width: 156px;
+    height: 24px;
+    left: 63vw;
+    top: 75vh;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: flex-end;
+    text-decoration-line: underline;
+    
+    color: #232164;
+}
+/* media queery for bvn page*/
+@media screen and (max-width: 920px) {
+    .card-title{
+        width: 40vw;
+        left: 6vw;
+        top: 5vh;
+    
+    font-size: 16px;
+    /* identical to box height */
+    
+    }
+    .field1{
+        left: 5vw;
+        top: 20vh;
+    font-size: 16px;
+    
+    
+    }
+    .bvn-card{
+        position: absolute;
+        top: 5vh;
+    
+    
+    }
+}
+
+/* media queery for bvn page*/
+
+.image-button{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 30vw;
+    height: 5vh;
+    left: 5vw;
+    top: 50vh;
+    
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+    border: 0.5px solid #D5D8DA;
+    border-radius: 5px;
+}
+.image-capture{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 15vw;
+    height: 5vh;
+    left: 12.5vw;
+    top: 40vh;
+    
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+    border: 0.5px solid #D5D8DA;
+    border-radius: 5px;
+}
+.form-textImg{
+    position: absolute;
+ width: 15vw;
+height: 20vh;
+left: 7vw;
+top: -10vh;
+
+background: rgba(250, 249, 249, 0.29);
+border: 1.5px dashed #013C86;
+border-radius: 10px;
+}
+.Img{
+    left: 12vw;
+}
+.ImgIcon{
+    position: absolute;
+ width: 2.5vw;
+height: 5vh;
+left: 13vw;
+top: -3vh;
+}
+.arrowIconImg{
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    left: 33vw;
+    top: 47vh;
+cursor: pointer;
+}
+@media screen and (max-width: 980px) {
+    .Img{
+        left: 10vw;
+    }
+    .arrowIconImg{
+        left: 32vw;
+        top: 48vh;
+    }
+}
+.password-view-left-bottom-text{
+    position: absolute;
+    width: 30vw;
+    left: 10vw;
+    top: 4rem;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+
+color: #262466;
+}
+.password-view{
+    position: absolute;
+width: 100vw;
+height: 100vh;
+
+background: #FFFFFF;
+}
+.cardContainerPassword{
+    position: absolute;
+    width: 50vw;
+    height: 70vh;
+    left: 20vw;
+    top: 18vh;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 41, 0.25);
+    border-radius: 20px;
+}
+.password-button{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 30vw;
+    height: 5vh;
+    left: 0vw;
+    top: 35vh;
+    
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+    border: 0.5px solid #D5D8DA;
+    border-radius: 5px;
+}
+
+.field-bottom-password{
+    position: absolute;
+    width: 50vw;
+    height: 5vh;
+    left: 20vw;
+    top: 62vh;
+    
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+/* or 209% */
+
+display: flex;
+color: #706E6E;
+}
+.eyeIcon{
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    left: 27vw;
+    top: -4vh;
+    background-color: #FFFF;
+border: 0.5px solid #D5D8DA;
+border-radius: 50%;
+cursor: pointer;
+}
+.questionIcon{
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    left: 1rem;
+    top: -0.5vh;
+    background-color: #FFFF;
+    cursor: pointer;
+}
+.arrowIcon{
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    left: 27vw;
+    top: 5vh;
+cursor: pointer;
+}
+.passShift{
+    position: absolute;
+    left: 1vw;
+    top: 8rem;
+}
+.passShift2{
+    position: absolute;
+    left: 1vw;
+    top: 15rem;
+}
+.cardContainerTransaction{
+    position: absolute;
+    width: 50vw;
+    height: 70vh;
+    left: 25vw;
+    top: 18vh;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 41, 0.25);
+    border-radius: 20px;
+}
+.form-textTransaction{
+    position: absolute;
+width: 25vw;
+left: -2vw;
+top: -12vh;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+text-align: center;
+
+color: #333333;
+}
+.form-textTranc{
+    position: absolute;
+top: 4.5vh;
+    width: 30vw;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+/* identical to box height */
+display: flex;
+align-items: flex-end;
+
+color: #030303;
+}
+.form-textTranc2{
+    position: absolute;
+top: 12.5vh;
+    width: 30vw;
+margin-bottom: 1rem;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+/* identical to box height */
+display: flex;
+align-items: flex-end;
+
+color: #030303;
+}
+.Transaction-view-left-bottom-text{
+    position: absolute;
+    width: 30vw;
+    left: 12.5vw;
+    top: 3.5rem;
+    
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 13px;
+
+color: #262466;
+}
+.fieldPin{
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    left: 5vw;
+border: 0.5px solid #D5D8DA;
+border-radius: 5px;
+display: flex;
+}
+.input-fieldPin{
+    position: relative;
+    left: 6vw;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.input-fieldPinWrap{
+    left: -5vw;
+    top: 4rem;
+    width: 20vw;
+    position: relative;
+    display: flex;
+    margin-bottom: -1rem;
+    justify-content: space-between;
+}
+.input-fieldPinWrap2{
+    left: -5vw;
+    top: 8rem;
+    width: 20vw;
+    position: relative;
+    display: flex;
+    margin-bottom: -1rem;
+    justify-content: space-between;
+}
+.arrowIconTrans{
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    left: 26vw;
+    top: 23.5vh;
+cursor: pointer;
+}
+.Transaction-button{
+       box-sizing: border-box;
+
+    position: absolute;
+    width: 30vw;
+    height: 5vh;
+    left: 1vw;
+    top: 35vh;
+    
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+    border: 0.5px solid #D5D8DA;
+    border-radius: 5px; 
+}
+.tranc{
+    position: absolute;
+    left: 7vw;
+    top: 14vh;
+}
+.tranc2{
+    position: absolute;
+    left: 7vw;
+    top: 26vh;
+}
+.trans{
+    position: absolute;
+    top: 30vh;
+    width: 25vw;
+    left: 3.5vw;
+}
+.exIconTrans{
+    position: relative;
+    top: -0.5vh;
+    left: -1vw;
+}
+@media screen and (max-width: 980px) {
+    .Transaction-view-left-bottom-text{
+    font-size: 12px;
+    
+    }
+    .form-textTransaction{
+    font-size: 10px;
+    top: -12vh;
+    width: 30vw;
+    left: -5vw;
+    }
+}
+.security-button{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 30vw;
+    height: 5vh;
+    left: 0vw;
+    top: 30vh;
+    
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+    border: 0.5px solid #D5D8DA;
+    border-radius: 5px;
+}
+.yesGreen{
+    color: #D5D8DA;
+    background: #3AB75D;
+}
+.noGreen{
+    background: #3AB75D;
+}
+.form-textSecurity{
+    position: absolute;
+width: 354px;
+height: 34px;
+left: -5vw;
+top: -10vh;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 18px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #7D8287;
+}
+.Security-view-left-bottom-text{
+    position: absolute;
+    width: 30vw;
+    left: 10vw;
+    top: 3rem;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+
+color: #262466;
+display: flex;
+}
+.secShift{
+    position: absolute;
+    top: -20vh;
+    left: -5vw;
+}
+.secShift1{
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+}
+.secShift2{
+    position: absolute;
+    top: 25vh;
+}
+.creditIcon{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    left: 38vw;
+    top: 7vh;
+cursor: pointer;
+}
+@media screen and (max-width: 980px) {
+   .secShift{
+    font-size: 10px;
+    width: 30vw;
+   }
+}
+.Activate-view-left-bottom-img{
+    position: absolute;
+width: 20rem;
+height: 22rem;
+left: 14vw;
+top: 15vh;
+}
+.Activate-view-left-bottom-text{
+    position: absolute;
+    width: 25vw;
+    left: 11vw;
+    top: 65vh;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+
+color: #262466;
+}
+.Activate-button{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 30vw;
+    height: 5vh;
+    left: 8vw;
+    top: 85vh;
+    
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+    border: 0.5px solid #D5D8DA;
+    border-radius: 5px;
+}
+@media screen and (max-width: 1100px) {
+    .Activate-view-left-bottom-img{
+    left: 10vw;
+    }
+}

@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+import mongoose from 'mongoose';
+import bcrypt from 'bcryptjs';
 
-const userSchema = new mongoose.Schema({
+const userSchema = mongoose.Schema({
     firstName: {
         type: String,
         required: true,
@@ -25,32 +25,15 @@ const userSchema = new mongoose.Schema({
         unique: true,
         lowercase: true
     },
-    username: {
-        type: String,
-        required: true,
-        minlength: 3,
-        maxlength: 20,
-        trim: true,
-        unique: true,
-        index: true,
-        lowercase: true
-    },
     hash_password: {
         type: String,
         required: true
     },
     role: {
         type: String,
-        required: true,
         enum: ['admin', 'user'],
         default: 'user'
     },
-    contactNumber: {
-        type: String
-    },
-    profilePicture: {
-        type: String
-    }
 },
 {timestamps: true});
 
@@ -60,17 +43,6 @@ userSchema.virtual('password')
     }
 );
 
-userSchema.virtual('fullName')
-    .get(function () {
-        return `${this.firstName} ${this.lastName}`;
-    });
+const User = mongoose.model('user', userSchema);
 
-
-
-userSchema.methods = {
-    authenticate: function (password) {
-        return bcrypt.compareSync(password, this.hash_password);
-    }
-}
-
-module.exports = mongoose.model('User', userSchema);
+export default User;

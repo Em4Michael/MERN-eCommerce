@@ -1,8 +1,49 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for eCommerce project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./Backend/src/index.server",
+    "server": "nodemon ./Backend/src/index.server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node Backend/seeder",
+    "data:destroy": "node Backend/seeder -d"
+  },
+  "keywords": [
+    "eCommerce",
+    "mern",
+    "project",
+    "backend",
+    "api"
+  ],
+  "author": "E4Michael",
+  "license": "ISC",
   "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "express-validator": "^6.14.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.4.0"
+  },
+  "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.18",
+    "postcss": "^8.4.14",
     "react-router-dom": "^6.3.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "tailwindcss": "^3.1.4"
   }
 }

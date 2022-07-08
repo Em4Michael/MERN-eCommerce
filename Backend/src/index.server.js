@@ -1,28 +1,36 @@
-const express = require('express');
-const env = require('dotenv');
+import express from 'express';
+import dotenv from 'dotenv';
+import connectDB from './config/db.js';
+import productRoutes from './routes/productRoutes.js';
+import employeeRoutes from './routes/employeeRoutes.js';
+import { notFound, errorHandler } from '../middleware/errorMiddleware.js';
+
+//import products from './data/products.js';
+import colors from 'colors'
+
+//import { useParams } from 'react-router-dom';
+
+
+//62bb219092d280cad2ab0851
+
+dotenv.config()
+connectDB()
 const app = express();
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-
-const authRoutes = require('./routes/auth');
-
-env.config();
 
 //mongodb connection
 //mongodb+srv://root:<password>@cluster0.2ryarbp.mongodb.net/?retryWrites=true&w=majority
-mongoose.connect(`mongodb+srv://${process.env.MONGO_DB_USER}:${process.env.MONGO_DB_PASSWORD}@cluster0.2ryarbp.mongodb.net/${process.env.MONGO_DB_DATABASE}?retryWrites=true&w=majority`,
-{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+app.get('/', (req, res) => {
+  res.send('API has started...')
 })
 
-.then(() => {
-        console.log('Connected to MongoDB');
-    });
+app.use('/api/products', productRoutes);
 
-app.use(bodyParser());
-app.use('/api', authRoutes);
+app.use(notFound);
+app.use(errorHandler);
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server started on port ${process.env.PORT}`);
-});
+app.use('/api/emp', employeeRoutes);
+
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold));
+
