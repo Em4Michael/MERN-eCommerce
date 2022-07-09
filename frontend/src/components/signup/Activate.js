@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import './signup.css'
 import { Link } from 'react-router-dom';
+import scamTrustLogo from '../../images/Group114(1).png'
+import ellipse2 from '../../images/Ellipse2.png'
+import Tick1 from '../../images/tick1.png'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEyeSlash, faEye, faCaretRight } from "@fortawesome/free-solid-svg-icons";
@@ -71,11 +74,11 @@ function Activate() {
                 <div className='signup-view-left'>
                     <div className='signup-view-left-top'>
                         <Link to='/Home'>
-                            <img src="/images/Group114(1).png" alt="Scam Trust" />
+                            <img src={scamTrustLogo} alt="Scam Trust" />
 
                         </Link>
                     </div>
-                    <img className="Activate-view-left-bottom-img" src="/images/tick1.png" alt="Scam Trust" />
+                    <img className="Activate-view-left-bottom-img" src={Tick1} alt="Scam Trust" />
                     <div className='Activate-view-left-bottom-text'>Congrats! Your <bold className='green-text'>ScamTrust</bold> password & transaction pin have been created successfully 
                     </div>
                     <Link to='/MERN-eCommerce'> <button className='Activate-button yes' type='submit' > Check mail </button></Link>
@@ -91,7 +94,7 @@ function Activate() {
                 </div>
 
                 <div className='signup-view-right-bottom-img'>
-                    <img src="/images/Ellipse2.png" alt="Scam Trust" />
+                    <img src={ellipse2} alt="Scam Trust" />
                 </div>
                 <div className='signup-view-right-bottom-name'>
                     Fadekemi Folalu

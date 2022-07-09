@@ -3,6 +3,7 @@ import './signup.css'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight, faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
+import scamTrustLogo from '../../images/Group114(1).png'
 
 function BVN() {
     const [values, setValues] = useState({
@@ -82,7 +83,7 @@ function BVN() {
             <div className='bvn-view'>
                 <div className='signup-view-left-top'>
                     <Link to='/Home'>
-                        <img src="/images/Group114(1).png" alt="Scam Trust" />
+                        <img src={scamTrustLogo} alt="Scam Trust" />
 
                     </Link>
                 </div>
@@ -146,17 +147,17 @@ function BVN() {
 
                                   
 
-                                    <Link to='/setPassword'><button className='bvn-button yes' type='submit' > Verify </button></Link>
+                                    <Link to='/MERN-eCommerce/setPassword'><button className='bvn-button yes' type='submit' > Verify </button></Link>
 
                                 </form>
-                                <div className='field-bottom-bvn'> Secured by <img className='field-bottom-img' src="/images/Group114(1).png" alt="Scam Trust" /> </div>
+                                <div className='field-bottom-bvn'> Secured by <img className='field-bottom-img' src={scamTrustLogo} alt="Scam Trust" /> </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='skip-link'>
-                    <Link to='/setPassword' className='text-blue'>Skip</Link>
+                    <Link to='/MERN-eCommerce/setPassword' className='text-blue'>Skip</Link>
                 </div>
             </div>
         </div>

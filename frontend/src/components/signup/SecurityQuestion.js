@@ -3,6 +3,7 @@ import './signup.css'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleExclamation, faCreditCard } from "@fortawesome/free-solid-svg-icons";
+import scamTrustLogo from '../../images/Group114(1).png'
 function SecurityQuestion() {
     const [values, setValues] = useState({
         SecurityQuestion: '',
@@ -57,7 +58,7 @@ function SecurityQuestion() {
                 <div className='password-view-left'>
                     <div className='signup-view-left-top'>
                         <Link to='/Home'>
-                            <img src="/images/Group114(1).png" alt="Scam Trust" />
+                            <img src={scamTrustLogo} alt="Scam Trust" />
 
                         </Link>
                     </div>
@@ -111,11 +112,11 @@ function SecurityQuestion() {
 
                             
 
-                            {submitted ? <Link to='/activate'><button className='password-button secShift2 yesGreen' type='submit' > Continue </button></Link> : <Link to='/activate'><button className='password-button secShift2 noGreen' type='submit' > Continue </button></Link>}
+                            {submitted ? <Link to='/MERN-eCommerce/activate'><button className='password-button secShift2 yesGreen' type='submit' > Continue </button></Link> : <Link to='/MERN-eCommerce/activate'><button className='password-button secShift2 noGreen' type='submit' > Continue </button></Link>}
                             
                         </form>
                     </div>
-                    <div className='field-bottom-password'> Secured by <img className='field-bottom-img' src="/images/Group114(1).png" alt="Scam Trust" /> </div>
+                    <div className='field-bottom-security'> Secured by <img className='field-bottom-img' src={scamTrustLogo} alt="Scam Trust" /> </div>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@
 .signup-view{
     position: relative;
 width: 100vw;
-height: 100vh;
+height: 52.5rem;
 
 background: #FFFFFF;
 }
@@ -12,7 +12,7 @@ background: #FFFFFF;
 .signup-view-right{
     position: absolute;
     width: 50vw;
-    height: 100vh;
+    height: 52.5vh;
     right: 0vw;
     top: 0vh;
     
@@ -254,7 +254,7 @@ cursor: pointer;
 }
 
 /* media queery for signup page*/
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 820px) {
     .text-bottom{
         width: 25vw;
     
@@ -286,7 +286,7 @@ cursor: pointer;
     width: 40vw;
     height: 80vh;
     left: 30vw;
-    top: 15vh;
+    top: 12vh;
     background: #FFFFFF;
     box-shadow: 0px 3px 6px rgba(0, 0, 41, 0.25);
     border-radius: 20px;
@@ -390,7 +390,7 @@ color: #232164;
 }
 .form-textBVN{
     position: absolute;
-    top: 1vh;
+    top: 0vh;
     left: -1vw;
     width: 23vw;
     font-family: 'Poppins';
@@ -506,7 +506,7 @@ color: #706E6E;
     width: 156px;
     height: 24px;
     left: 63vw;
-    top: 75vh;
+    top: 73vh;
     
     font-family: 'Poppins';
     font-style: normal;
@@ -633,7 +633,7 @@ color: #262466;
 .password-view{
     position: absolute;
 width: 100vw;
-height: 100vh;
+height: 52.5rem;
 
 background: #FFFFFF;
 }
@@ -774,7 +774,7 @@ color: #030303;
 .Transaction-view-left-bottom-text{
     position: absolute;
     width: 30vw;
-    left: 12.5vw;
+    left: 11vw;
     top: 3.5rem;
     
 
@@ -784,6 +784,10 @@ font-weight: 800;
 font-size: 13px;
 
 color: #262466;
+}
+.transaction{
+    position: absolute;
+    left: 9vw;
 }
 .fieldPin{
     position: relative;
@@ -863,6 +867,23 @@ font-weight: 500;
     top: -0.5vh;
     left: -1vw;
 }
+.field-bottom-transaction{
+    position: absolute;
+    width: 50vw;
+    height: 5vh;
+    left: 18vw;
+    top: 62vh;
+    
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+/* or 209% */
+
+display: flex;
+color: #706E6E;
+}
 @media screen and (max-width: 980px) {
     .Transaction-view-left-bottom-text{
     font-size: 12px;
@@ -918,7 +939,7 @@ color: #7D8287;
 .Security-view-left-bottom-text{
     position: absolute;
     width: 30vw;
-    left: 10vw;
+    left: 11vw;
     top: 3rem;
 
 font-family: 'Lato';
@@ -936,7 +957,7 @@ display: flex;
 }
 .secShift1{
     position: absolute;
-    top: 1vh;
+    top: 0vh;
     left: 1vw;
 }
 .secShift2{
@@ -950,6 +971,23 @@ display: flex;
     left: 38vw;
     top: 7vh;
 cursor: pointer;
+}
+.field-bottom-security{
+    position: absolute;
+    width: 50vw;
+    height: 5vh;
+    left: 18vw;
+    top: 62vh;
+    
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 10px;
+/* or 209% */
+
+display: flex;
+color: #706E6E;
 }
 @media screen and (max-width: 980px) {
    .secShift{

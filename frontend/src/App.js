@@ -38,17 +38,17 @@ const App = () => {
      {/*  <SideBar />
       <Center /> */}
        <Routes>
-            <Route path='/activate' element={<Activate />} />
-            <Route path='/securityquestion' element={<SecurityQuestion />} />
-            <Route path='/transaction' element={<Transaction />} />
-            <Route path='/setPassword' element={<SetPassword />} />
-            <Route path='/imagecapture' element={<ImageCapture />} />
-            <Route path='/bvn' element={<BVN />} />
+            <Route path='MERN-eCommerce/activate' element={<Activate />} />
+            <Route path='MERN-eCommerce/securityquestion' element={<SecurityQuestion />} />
+            <Route path='MERN-eCommerce/transaction' element={<Transaction />} />
+            <Route path='MERN-eCommerce/setPassword' element={<SetPassword />} />
+            <Route path='MERN-eCommerce/imagecapture' element={<ImageCapture />} />
+            <Route path='MERN-eCommerce/bvn' element={<BVN />} />
             <Route path='MERN-eCommerce/' element={<Signup />} />
             
-            <Route path='/sideBar' element={<SideBar />} />
-            <Route path='/center' element={<Center />} />
-            <Route path='/exportAsImage' element={<exportAsImage />} />
+            <Route path='MERN-eCommerce/sideBar' element={<SideBar />} />
+            <Route path='MERN-eCommerce/center' element={<Center />} />
+            <Route path='MERN-eCommerce/exportAsImage' element={<exportAsImage />} />
           </Routes>
       {/* <Header /> */}
        {/*  <Navbar /> 

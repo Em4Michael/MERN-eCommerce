@@ -3,6 +3,7 @@ import './signup.css'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleExclamation, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import scamTrustLogo from '../../images/Group114(1).png'
 function Transaction() {
     const [values, setValues] = useState({
         pin1: '',
@@ -105,7 +106,7 @@ function Transaction() {
             <div className='password-view-left'>
                 <div className='signup-view-left-top'>
                     <Link to='/Home'>
-                        <img src="/images/Group114(1).png" alt="Scam Trust" />
+                        <img src={scamTrustLogo} alt="Scam Trust" />
 
                     </Link>
                 </div>
@@ -114,7 +115,7 @@ function Transaction() {
                         Let’s help you secure your <bold className='green-text'>ScamTrust</bold> Customer account. Kindly set your <bold className='green-text'>password</bold> and <bold className='green-text'>transaction pin</bold>.
                     </div>
 
-                    <div className="form password">
+                    <div className="form transaction">
                         <div className='field'>
                             <h4 className='form-textTransaction'>To set up your pin, input your 4-digit code and confirm it below.</h4>
 
@@ -225,12 +226,12 @@ function Transaction() {
                             {submitted && error.pinCheckError2 && <span className='error tranc2'><FontAwesomeIcon className='exIconTrans' icon={faCircleExclamation} />{error.pinCheckError2}</span>}
 
 
-                            {Input ? <Link to='/securityquestion'><button className='Transaction-button trans yes' type='submit' > Set security question </button></Link> : <Link to='/securityquestion'><button className='Transaction-button trans no' type='submit' disabled> Set security question </button></Link>}
+                            {Input ? <Link to='/MERN-eCommerce/securityquestion'><button className='Transaction-button trans yes' type='submit' > Set security question </button></Link> : <Link to='/securityquestion'><button className='Transaction-button trans no' type='submit' disabled> Set security question </button></Link>}
                             <FontAwesomeIcon className='arrowIconTrans' icon={faCaretRight} />
 
                         </form>
                     </div>
-                    <div className='field-bottom-password'> Secured by <img className='field-bottom-img' src="/images/Group114(1).png" alt="Scam Trust" /> </div>
+                    <div className='field-bottom-transaction'> Secured by <img className='field-bottom-img' src={scamTrustLogo} alt="Scam Trust" /> </div>
                 </div>
             </div>
         </div>

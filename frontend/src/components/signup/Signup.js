@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight, faCircleExclamation } from "@fortawesome/free-solid-svg-icons";
+import scamTrustLogo from '../../images/Group114(1).png'
+import ellipse2 from '../../images/Ellipse2.png'
+//images/Ellipse2.png
+
 
 function Signup() {
     const [values, setValues] = useState({
@@ -17,45 +21,57 @@ function Signup() {
         phoneNumber: '',
         email: '',
         userName: '',
-        location: ''
+        location: '',
+        All: ''
     });
+    const [Errors, setErrors] = useState(true);
 
     const handleChange = (event) => {
         const { name, value } = event.target;
         setValues({ ...values, [name]: value });
     }
      
-    
+    //g@g.com
     const validate = (values) => {
-        const error = {};   
+        const error = {};  
+
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
         const regex2 = /^[0-9]{11}$/;
 
         if (!values.phoneNumber) {
             error.phoneNumber = 'Phone Number is required';
+            error.All = true;
         }else if (!regex2.test(values.phoneNumber)) {
             error.phoneNumber = 'Invalid Phone Number';
+            error.All = true;
         }
         if (!values.email) {
             error.email = 'Email is required';
-        } else if (!regex.test(values.email)) {
+        } /* else if (!regex.test(values.email)) {
             error.email = 'Invalid email';
-        }
+            error.All = true;
+        } */
         if (!values.userName) {
             error.userName = 'User Name is required';
+            error.All = true;
         }
         if (!values.location) {
             error.location = 'Location is required';
+            error.All = true;
         }
         
         return error;
     }
+
+   
     
+  
 
     const [submitted, setSubmitted] = useState(false);
     const [valid, setValid] = useState(false);
     const handleCheckbox = () => {
         setChecked(!checked);
+
     }
     const [checked, setChecked] = useState(false);
 
@@ -63,6 +79,9 @@ function Signup() {
         event.preventDefault();
         setSubmitted(true);
         setError(validate(values));
+        setErrors(
+            error.All === true ? true : false
+        );
     }
 
     useEffect(() => {
@@ -75,7 +94,7 @@ function Signup() {
                 <div className='signup-view-left'>
                     <div className='signup-view-left-top'>
                         <Link to='/Home'>
-                            <img src="/images/Group114(1).png" alt="Scam Trust" />
+                            <img src={scamTrustLogo} alt="Scam Trust" />
 
                         </Link>
                     </div>
@@ -141,8 +160,8 @@ function Signup() {
                                 <span className='radio-text'>I agree <Link to='/Terms' className='text-blue'>Scam Trust</Link>Terms of Service and Privacy Policy</span>
                             </div>
 
-                            {checked ? <Link to='/bvn'><button className='signup-button yes' type='submit' > Proceed to verify BVN </button></Link> : <Link to='/bvn'><button className='signup-button no' type='submit' disabled> Proceed to verify BVN </button></Link>}
-                            <FontAwesomeIcon className='arrowIconImg' icon={faCaretRight} />
+                            {checked ? <Link to='/MERN-eCommerce/bvn'><button className='signup-button yes'> Proceed to verify BVN </button></Link> : <button className='signup-button no' disabled> Proceed to verify BVN </button> } {/* { !Errors  ? <Link to='/'><button className='signup-button yes'> Proceed to verify BVN </button></Link> : <button className='signup-button2 no' disabled> Proceed to verify BVN </button>} */}
+                            <FontAwesomeIcon className='arrowIconSignup' icon={faCaretRight} />
 
                         </form>
                     </div>
@@ -160,7 +179,7 @@ function Signup() {
                 </div>
 
                 <div className='signup-view-right-bottom-img'>
-                    <img src="/images/Ellipse2.png" alt="Scam Trust" />
+                    <img src={ellipse2} alt="Scam Trust" />
                 </div>
                 <div className='signup-view-right-bottom-name'>
                     Fadekemi Folalu
