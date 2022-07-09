@@ -225,7 +225,7 @@ function Transaction() {
                             {submitted && error.pinCheckError2 && <span className='error tranc2'><FontAwesomeIcon className='exIconTrans' icon={faCircleExclamation} />{error.pinCheckError2}</span>}
 
 
-                            {Input ? <button className='Transaction-button trans yes' type='submit' > Set security question </button> : <button className='Transaction-button trans no' type='submit' disabled> Set security question </button>}
+                            {Input ? <Link to='/securityquestion'><button className='Transaction-button trans yes' type='submit' > Set security question </button></Link> : <Link to='/securityquestion'><button className='Transaction-button trans no' type='submit' disabled> Set security question </button></Link>}
                             <FontAwesomeIcon className='arrowIconTrans' icon={faCaretRight} />
 
                         </form>

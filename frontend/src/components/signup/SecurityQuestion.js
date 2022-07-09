@@ -111,7 +111,7 @@ function SecurityQuestion() {
 
                             
 
-                            {submitted ? <button className='password-button secShift2 yesGreen' type='submit' > Continue </button> : <button className='password-button secShift2 noGreen' type='submit' > Continue </button>}
+                            {submitted ? <Link to='/activate'><button className='password-button secShift2 yesGreen' type='submit' > Continue </button></Link> : <Link to='/activate'><button className='password-button secShift2 noGreen' type='submit' > Continue </button></Link>}
                             
                         </form>
                     </div>

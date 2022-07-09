@@ -141,7 +141,7 @@ function Signup() {
                                 <span className='radio-text'>I agree <Link to='/Terms' className='text-blue'>Scam Trust</Link>Terms of Service and Privacy Policy</span>
                             </div>
 
-                            {checked ? <button className='signup-button yes' type='submit' > Proceed to verify BVN </button> : <button className='signup-button no' type='submit' disabled> Proceed to verify BVN </button>}
+                            {checked ? <Link to='/bvn'><button className='signup-button yes' type='submit' > Proceed to verify BVN </button></Link> : <Link to='/bvn'><button className='signup-button no' type='submit' disabled> Proceed to verify BVN </button></Link>}
                             <FontAwesomeIcon className='arrowIconImg' icon={faCaretRight} />
 
                         </form>

@@ -148,7 +148,7 @@ function SetPassword() {
 
                             
 
-                            {Input ? <button className='password-button yes' type='submit' > Proceed to transaction pin </button> : <button className='password-button no' type='submit' disabled> Proceed to transaction pin </button>}
+                            {Input ?<Link to='/transaction'> <button className='password-button yes' type='submit' > Proceed to transaction pin </button></Link> : <Link to='/transaction'><button className='password-button no' type='submit' disabled> Proceed to transaction pin </button></Link>}
                             <FontAwesomeIcon className='arrowIcon' icon={faCaretRight} />
                             
                         </form>

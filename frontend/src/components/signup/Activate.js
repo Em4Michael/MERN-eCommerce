@@ -78,7 +78,7 @@ function Activate() {
                     <img className="Activate-view-left-bottom-img" src="/images/tick1.png" alt="Scam Trust" />
                     <div className='Activate-view-left-bottom-text'>Congrats! Your <bold className='green-text'>ScamTrust</bold> password & transaction pin have been created successfully 
                     </div>
-                    <button className='Activate-button yes' type='submit' > Check mail </button>
+                    <Link to='/MERN-eCommerce'> <button className='Activate-button yes' type='submit' > Check mail </button></Link>
                     
                 </div>
             </div>

@@ -9,6 +9,7 @@
     "start": "node ./Backend/src/index.server",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "server": "nodemon ./Backend/src/index.server",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",

@@ -146,7 +146,7 @@ function BVN() {
 
                                   
 
-                                    <button className='bvn-button yes' type='submit' > Verify </button>
+                                    <Link to='/setPassword'><button className='bvn-button yes' type='submit' > Verify </button></Link>
 
                                 </form>
                                 <div className='field-bottom-bvn'> Secured by <img className='field-bottom-img' src="/images/Group114(1).png" alt="Scam Trust" /> </div>
@@ -156,7 +156,7 @@ function BVN() {
                     </div>
                 </div>
                 <div className='skip-link'>
-                    <Link to='/' className='text-blue'>Skip</Link>
+                    <Link to='/setPassword' className='text-blue'>Skip</Link>
                 </div>
             </div>
         </div>

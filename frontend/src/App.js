@@ -44,7 +44,7 @@ const App = () => {
             <Route path='/setPassword' element={<SetPassword />} />
             <Route path='/imagecapture' element={<ImageCapture />} />
             <Route path='/bvn' element={<BVN />} />
-            <Route path='/signup' element={<Signup />} />
+            <Route path='MERN-eCommerce/' element={<Signup />} />
             
             <Route path='/sideBar' element={<SideBar />} />
             <Route path='/center' element={<Center />} />
