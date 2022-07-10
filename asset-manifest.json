@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/MERN-eCommerce/static/css/main.a8a1d6ca.css",
-    "main.js": "/MERN-eCommerce/static/js/main.74b43ee2.js",
+    "main.css": "/MERN-eCommerce/static/css/main.b0ba1ead.css",
+    "main.js": "/MERN-eCommerce/static/js/main.c5d82480.js",
     "static/js/787.cda612ba.chunk.js": "/MERN-eCommerce/static/js/787.cda612ba.chunk.js",
     "static/media/tick1.png": "/MERN-eCommerce/static/media/tick1.68e4367d6fdaeb0bf733.png",
     "static/media/Ellipse2.png": "/MERN-eCommerce/static/media/Ellipse2.c50592b45a9de8ced17b.png",
     "index.html": "/MERN-eCommerce/index.html",
-    "main.a8a1d6ca.css.map": "/MERN-eCommerce/static/css/main.a8a1d6ca.css.map",
-    "main.74b43ee2.js.map": "/MERN-eCommerce/static/js/main.74b43ee2.js.map",
+    "main.b0ba1ead.css.map": "/MERN-eCommerce/static/css/main.b0ba1ead.css.map",
+    "main.c5d82480.js.map": "/MERN-eCommerce/static/js/main.c5d82480.js.map",
     "787.cda612ba.chunk.js.map": "/MERN-eCommerce/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8a1d6ca.css",
-    "static/js/main.74b43ee2.js"
+    "static/css/main.b0ba1ead.css",
+    "static/js/main.c5d82480.js"
   ]
 }
